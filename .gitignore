@@ -1,5 +1,6 @@
 *.txt
 *.xls
+*.xlsx
 x64
 Release
 Debug
