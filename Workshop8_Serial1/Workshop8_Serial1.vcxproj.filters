@@ -15,13 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
+    <ClCompile Include="w8.serial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

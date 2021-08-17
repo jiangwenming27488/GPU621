@@ -15,14 +15,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
+    <ClCompile Include="tbbPractice.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
+    <ClCompile Include="w6.serial.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
+    <ClCompile Include="w6.functor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="w6.tbb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="w6.text.dat">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="w6.gutenberg.dat">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="WordCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

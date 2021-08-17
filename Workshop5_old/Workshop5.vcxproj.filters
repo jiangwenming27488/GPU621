@@ -15,14 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
+    <ClCompile Include="w5.baseline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
+    <ClCompile Include="MatMul.worksharing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
+    <ClCompile Include="MatMul.task.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MatMul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

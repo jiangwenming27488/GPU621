@@ -15,14 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
+    <ClCompile Include="w7.tbb.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
+    <ClCompile Include="w7.omp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OMP-Body.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,0 +1,54 @@
+// GPU621 Workshop 5 Reflect
+// Nathan Olah
+// Student Number: 124723198
+// 2020-11-07
+
+
+The optimal case I found for the work sharing construct was the loop interchange algorithm.   
+During my test runs it performed slightly faster than the work sharing loop interchange with vectorization.
+The loop interchange with the cache blocking implementation helps improve the performance when processing
+large amounts of data into smaller partitions, allowing the loop to fit within the L1 cache. 
+The loop interchange on the inner loops converts the constant strides into a unit strides. 
+This removes the need to access memory over a wide range.
+
+The optimal case I found for each task construct on the inner loops I found was to use a depend
+clause on each of the inner most loops. Each dependency on the task consumes variables in the list
+of 'a[i:M][k:M]' and 'b[k:M][j:M]'. With the final inner most loop having a task construct dependency that consumes
+the variable 'c[i:M][j:M]' and updates it. By looking at each range in the iterations of the inner loops each variable
+in the depend clause contains an array notation with constraints that represent in the position of the first
+element, and the length of the last element, ie. ‘a[i:M][k:M]’.
+
+During the process of completing this workshop I learned about the fork-join pattern. 
+By using OpenMP's task construct I was able to fork a thread and spawn a new child thread from the master thread.
+Once a task is complete the child thread joins back into the master thread executing in one single flow of control.
+The task construct is used to identify a fork, and the taskwait construct identifies a join as it waits
+for the child task to complete. Tasking allows you to exploit parallelism for complicated data flow
+dependences between computations. The task construct can also take a depend clause to identify the dependencies.
+A dependence type can be either in, out, or inout. I learned that instead of parallelizing multiple data to
+the same task, the fork-join pattern is used for parallelizing tasks. Each flow of control that operates on a task
+is independent of other flows and may differ in executions since tasks may differ from each other.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

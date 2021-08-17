@@ -15,13 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
+    <ClInclude Include="scan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="scan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

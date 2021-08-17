@@ -15,14 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
+    <ClCompile Include="w5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
+    <ClCompile Include="MatMul.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MatMul.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

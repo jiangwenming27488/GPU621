@@ -15,13 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="mpi_receiver.c">
+    <ClCompile Include="w9.serial.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpi_scatter.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mpi_sender.cpp">
+    <ClCompile Include="w9.mpi.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
